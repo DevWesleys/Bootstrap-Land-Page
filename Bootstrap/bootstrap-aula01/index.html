@@ -12,42 +12,34 @@
 <!-- adicionando nav bar -->
 
 <body>
-    <nav class="navbar navbar-expand-lg  navbar-light cor-navbar ">
-        <a class="navbar-brand p-3" href="#">Monster Hunter</a>
+    <nav class="navbar  navbar-expand-lg  navbar-dark cornavbar " id="home">
+        <img src="./img/logomhw.jpg" height="90" alt="" loading="lazy">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse " id="conteudoNavbarSuportado">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto centralizar-links">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(página atual)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Imagens</a>
+                    <a class="nav-link " href="#ancoraimg">Imagens</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Videos</a>
+                    <a class="nav-link " href="#ancoravideo">Videos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-item" href="#">Cards</a>
+                    <a class="nav-link nav-item" href="#ancoracard">Cards</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Fale Conosco
-              </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Endereço</a>
-                        <a class="dropdown-item" href="#">Localização no mapa</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Rede Sociais</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link nav-item" href="#ancoracontato">Contato</a>
                 </li>
 
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                <input class="form-control mr-sm-2" type="search" placeholder="Digite sua busca aqui" aria-label="Pesquisar">
+                <button class="btn botaonavbar my-2 my-sm-0" type="submit">Pesquisar</button>
             </form>
         </div>
     </nav>
@@ -86,150 +78,206 @@
     <!-- adicionando titulo -->
     <div>
         <h4 class="my-4 text-center">Monster Hunter World</h4>
+        <p class="text-center mb-5 "> Bem vindo a um mundo cheio de perigos e recompensas incriveis , junte-se a guilda dos caçadores!</p>
+        <h4 class="text-center" id="ancoraimg">Galeria de Monstros</h4>
     </div>
 
     <!-- adicionando imagens -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-1">
-                <img src="" alt="">
+    <section class="container">
+        <div class=" row fototexto rowsfototexto ">
+            <div class="col-md-6 ">
+                <img class="w-100 imgradius" src=" ./img/safijiva.jpg " alt="safijiva ">
             </div>
-            <div class="col-md-2">
-                <img src="" alt="">
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <img src="" alt="">
-                </div>
-                <div class="col-sm-4">
-                    <img src="" alt="">
-                </div>
-                <div class="col-sm-4">
+            <div class="col-md-6 espacotexto ">
+                <h2 class="safijiva">Safijiva</h2>
+                <p>É um dragão ancião , Absorve energia de seu ambiente para se curar e mudar o ecossistema.</p>
+                <br>
+                <span>Tipo de inimigo: Monstro Grande</span>
+                <br>
+                <span>Espécie: Dragão Ancião</span>
+                <br>
+                <span>Elementos: Fogo, Dragão</span>
+                <br>
+                <span>Fraqueza: Selo Ancião</span>
+                <br>
+                <span>Localização: Vale Isolado</span>
 
-                </div>
             </div>
         </div>
-    </div>
+
+
+        <div class="row fototexto rowsfototexto ">
+            <div class="col-md-6 ">
+                <h2 class="fatalis">Fatalis</h2>
+                <p>Um lendário dragão negro conhecido apenas como Fatalis. Há rumores de que destruiu um reino em uma única noite e tomou seu castelo como poleiro.</p>
+                <br>
+                <span>Tipo de inimigo: Monstro Grande</span>
+                <br>
+                <span>Espécie: Dragão Ancião</span>
+                <br>
+                <span>Elementos: Fogo</span>
+                <br>
+                <span>Fraqueza: Selo Ancião e Fogo</span>
+                <br>
+                <span>Localização: Castelo Schrade</span>
+            </div>
+            <div class="col-md-6 ">
+                <img class="w-100 imgradius" class="imgradius " src="./img/fatalis.jpg " alt="celular " height="300 ">
+            </div>
+
+        </div>
+        <div class="row fototexto rowsfototexto ">
+            <div class="col-md-6 ">
+                <img class="w-100 imgradius" class="imgradius " src=" ./img/rathalos.jpg " alt="celular ">
+            </div>
+            <div class="col-md-6 espacotexto ">
+                <h2 class="rathalos">Rathalos</h2>
+                <p>O monstro ápice da Floresta Antiga, também conhecido como o "Rei dos Céus ". Um wyvern feroz que desce sobre invasores, atacando com suas garras venenosas e respiração ardente.</p>
+                <br>
+                <span>Tipo de inimigo: Monstro Grande</span>
+                <br>
+                <span>Espécie: Wyvern Voador</span>
+                <br>
+                <span>Elementos: Fogo</span>
+                <br>
+                <span>Fraqueza: Dragão e Raio</span>
+                <br>
+                <span>Localização: Floresta Antiga</span>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-6 ">
+                <h2 class="zinogre">Zinogre</h2>
+                <p>Relâmpagos percorrem a pele e o revestimento único deste wyvern. É mais mortal em seu estado sobrecarregado</p>
+                <br>
+                <span>Tipo de inimigo: Monstro Grande</span>
+                <br>
+                <span>Espécie: Wyvern com presas</span>
+                <br>
+                <span>Elementos: Trovão</span>
+                <br>
+                <span>Fraqueza: Gelo e Agua</span>
+                <br>
+                <span>Localização: Floresta Antiga , Planaltos Coralinos , As Terras Guia</span>
+            </div>
+            <div class="col-md-6 ">
+                <img class="w-100 imgradius" class="imgradius " src="./img/zinogre.jpg " alt="celular " height="300 ">
+            </div>
+
+    </section>
+
     <!-- adicionando texto -->
-    <hr>
     <div>
-        <h4 class="my-4 text-center">Monster Hunter World</h4>
+        <h4 class="my-5 text-center " id="ancoracard">Cards</h4>
     </div>
-
-    <hr>
-
     <!-- adicionando cards -->
 
-    <div class="card-group">
-        <div class="card">
-            <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
-            <div class="card-body">
-                <h5 class="card-title">Título do card</h5>
-                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
-                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+    <div class="card-group ">
+        <div class="card ">
+            <img class="card-img-top imgradius " src="./img/mapas.jpg" alt="Imagem de capa do card ">
+            <div class="card-body ">
+                <h5 class="card-title text-center ">Mapas</h5>
+                <p class="card-text text-center ">No jogos encontramos varios mapas dos mais variados biomas: deserto , floresta, neve , cavernas</p>
+                <p class="card-text "><small class="text-muted ">Atualizados 3 minutos atrás</small></p>
             </div>
         </div>
-        <div class="card">
-            <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
-            <div class="card-body">
-                <h5 class="card-title">Título do card</h5>
-                <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+        <div class="card ">
+            <img class="card-img-top imgradius " src=" ./img/personagens.jpg  " alt="Imagem de capa do card ">
+            <div class="card-body ">
+                <h5 class="card-title text-center ">Personagens</h5>
+                <p class="card-text text-center ">Vamos contar com a ajuda do nosso Amigato e de personagens que vão nos ajudar nas caçadas</p>
+                <p class="card-text "><small class="text-muted ">Atualizados 3 minutos atrás</small></p>
             </div>
         </div>
-        <div class="card">
-            <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
-            <div class="card-body">
-                <h5 class="card-title">Título do card</h5>
-                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
-                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+        <div class="card ">
+            <img class="card-img-top imgradius " src="./img/monstros.jpg " alt="Imagem de capa do card ">
+            <div class="card-body ">
+                <h5 class="card-title text-center ">Monstros</h5>
+                <p class="card-text text-center ">Monstros pequenos ,médios e grandes , dos mais vários tipos , com poderes destruidores para o jogador desafiar</p>
+                <p class="card-text "><small class="text-muted ">Atualizados 3 minutos atrás</small></p>
             </div>
         </div>
     </div>
-
-    <!-- adicionando texto -->
-    <div>
-        <h4 class="my-4 text-center">Monster Hunter World</h4>
-    </div>
-
     <hr>
 
 
-    <div class="row my-5">
-        <div class="col-md-6">
+    <div class="row mx-md-n5 ">
+        <div class="col px-md-5 " id="ancoracontato">
+            <div>
+                <h4 class="my-4 text-center ">Se inscreva para receber novidades!</h4>
+            </div>
             <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Endereço de email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
-                    <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+                <div class="form-group ">
+                    <label for="nome ">Nome de Usuario</label>
+                    <input type="text " class="form-control " id="nome " aria-describedby="nameHelp " placeholder="Seu nome " onkeyup="validaNome() ">
+                    <div id="txtNome "> </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Senha</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                <div class="form-group ">
+                    <label for="email ">Endereço de email</label>
+                    <input type="email " class="form-control " id="email " aria-describedby="emailHelp " placeholder="Seu email " onkeyup="validaEmail() ">
+                    <div id="txtEmail "> </div>
                 </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Clique em mim</label>
+                <div class="form-group ">
+                    <label for="senha ">Senha</label>
+                    <input type="senha " class="form-control " id="senha " placeholder="Senha " onkeyup="validaSenha() ">
+                    <div id="txtSenha "> </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <div class="form-group form-check ">
+                    <input type="checkbox " class="form-check-input " id="exampleCheck1 ">
+                    <label class="form-check-label " for="exampleCheck1 ">Clique em mim</label>
+                </div>
+                <button type="submit " class="btn btn-primary ">Enviar</button>
             </form>
 
         </div>
-        <div class="col-md-6">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/q4AoVUamhxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="col px-md-5 " id="ancoravideo">
+            <div>
+                <h4 class="my-4 text-left ">Trailer Monster Hunter Wolrd:Iceborne</h4>
+            </div>
+            <iframe width="560 " class="imgradius" height="315 " src="https://www.youtube.com/embed/q4AoVUamhxo " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
         </div>
 
     </div>
 
     <div>
-        <footer class="bg-light text-center text-white">
-            <!-- Grid container -->
-            <div class="container p-4 pb-0">
-                <!-- Section: Social media -->
-                <section class="mb-4">
-                    <!-- Facebook -->
-                    <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i class="fab fa-facebook-f"></i
-                ></a>
+        <div>
+            <footer class="bg-light text-center text-white">
+                <footer>
+                    <div class="container mt-3">
+                        <a href="https://www.twitter.com/ " target="_blank ">
+                            <img class="tm-social p-2 " src="./img/twitter.png " alt="logo do twitter ">
+                        </a>
+                        <a href="https://www.linkedin.com/ " target="_blank ">
+                            <img class="tm-social p-2" src="./img/linkedin.png " alt="logo do linkedin ">
+                        </a>
+                        <a href="https://facebook.com/ " target="_blank ">
+                            <img class="tm-social  p-2" src="./img/facebook.png " alt="logo do facebook ">
+                        </a>
+                        <a href="https://github.com/DevWesleys " target="_blank ">
+                            <img class="tm-social  p-2" src="./img/github.png " alt="logo do github ">
+                        </a>
 
-                    <!-- Twitter -->
-                    <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i
-                ></a>
+                    </div>
 
-                    <!-- Google -->
-                    <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i class="fab fa-google"></i
-                ></a>
+                </footer>
 
-                    <!-- Instagram -->
-                    <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i
-                ></a>
+                <div class="text-center p-3 mt-2 " style="background-color: rgba(0, 0, 0, 0.993); ">
+                    © 2020 Copyright:
+                    <a class="text-white " href="https://mdbootstrap.com/ ">DevWesleys</a>
+                </div>
 
-                    <!-- Linkedin -->
-                    <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i
-                ></a>
-                    <!-- Github -->
-                    <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i
-                ></a>
-                </section>
-                <!-- Section: Social media -->
-            </div>
-            <!-- Grid container -->
+            </footer>
 
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                © 2020 Copyright:
-                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-            </div>
-            <!-- Copyright -->
-        </footer>
+        </div>
+
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous ">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+    <link rel="stylesheet " href="style.css ">
 </body>
 
 </html>
